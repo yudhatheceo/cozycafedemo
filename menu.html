@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Menu — Cozy Cafe Cadillac MI</title>
-  <meta name="description" content="Explore the Cozy Cafe menu. Fresh pastries, sandwiches, burgers, and specialty coffee drinks in Cadillac, MI." />
+  <meta name="description"
+    content="Explore the Cozy Cafe menu. Fresh pastries, sandwiches, burgers, and specialty coffee drinks in Cadillac, MI." />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Cozy Cafe Menu — Cadillac MI" />
-  <meta property="og:description" content="Pastries, sandwiches, burgers, and specialty drinks. Fresh daily at Cozy Cafe." />
+  <meta property="og:description"
+    content="Pastries, sandwiches, burgers, and specialty drinks. Fresh daily at Cozy Cafe." />
   <meta property="og:image" content="img/interior.webp" />
   <link rel="icon" type="image/png" href="img/exterior.webp" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,6 +22,7 @@
       grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
       gap: 1.2rem;
     }
+
     .drink-card {
       background: #fff;
       border-radius: var(--radius-lg);
@@ -29,31 +33,66 @@
       box-shadow: var(--shadow-sm);
       transition: transform var(--transition), box-shadow var(--transition);
     }
-    .drink-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
-    .drink-icon {
-      width: 52px; height: 52px; border-radius: 50%;
-      background: var(--cream);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 1.5rem; flex-shrink: 0;
+
+    .drink-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
     }
-    .drink-info { flex: 1; }
-    .drink-info h4 { font-size: .95rem; color: var(--brown-dark); margin-bottom: .2rem; }
-    .drink-info p { font-size: .8rem; color: var(--text-mid); }
-    .drink-price { font-weight: 700; color: var(--brown); font-size: 1rem; }
+
+    .drink-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: var(--cream);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .drink-info {
+      flex: 1;
+    }
+
+    .drink-info h4 {
+      font-size: .95rem;
+      color: var(--brown-dark);
+      margin-bottom: .2rem;
+    }
+
+    .drink-info p {
+      font-size: .8rem;
+      color: var(--text-mid);
+    }
+
+    .drink-price {
+      font-weight: 700;
+      color: var(--brown);
+      font-size: 1rem;
+    }
 
     .menu-section-header {
-      display: flex; align-items: center; gap: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
       margin-bottom: 1.5rem;
     }
+
     .menu-section-header h3 {
-      font-size: 1.3rem; color: var(--brown-dark);
+      font-size: 1.3rem;
+      color: var(--brown-dark);
       white-space: nowrap;
     }
+
     .menu-section-line {
-      flex: 1; height: 1px; background: var(--cream-dark);
+      flex: 1;
+      height: 1px;
+      background: var(--cream-dark);
     }
   </style>
 </head>
+
 <body>
 
   <!-- ── NAVBAR ─────────────────────────────── -->
@@ -95,7 +134,8 @@
         <p class="section-label">Fresh & Delicious</p>
         <h2 class="section-title">Made with Love, Daily</h2>
         <div class="divider center"></div>
-        <p class="section-sub">Everything on our menu is prepared fresh each day. From flaky morning pastries to hearty afternoon bites — there's something for every craving.</p>
+        <p class="section-sub">Everything on our menu is prepared fresh each day. From flaky morning pastries to hearty
+          afternoon bites — there's something for every craving.</p>
       </div>
 
       <!-- TAB BAR -->
@@ -326,8 +366,10 @@
       </div>
 
       <!-- Allergen note -->
-      <p class="fade-up" style="margin-top:2.5rem;font-size:.82rem;color:var(--text-mid);text-align:center;padding:1rem;background:var(--cream);border-radius:var(--radius);">
-        ⚠️ Please inform our staff of any allergies or dietary requirements. Menu items and prices are subject to change.
+      <p class="fade-up"
+        style="margin-top:2.5rem;font-size:.82rem;color:var(--text-mid);text-align:center;padding:1rem;background:var(--cream);border-radius:var(--radius);">
+        ⚠️ Please inform our staff of any allergies or dietary requirements. Menu items and prices are subject to
+        change.
       </p>
 
     </div>
@@ -335,10 +377,12 @@
 
   <!-- ── CTA STRIP ──────────────────────────── -->
   <section class="section-sm" style="background:var(--cream);">
-    <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;">
+    <div class="container"
+      style="display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;">
       <div class="fade-up">
         <h2 style="font-size:clamp(1.4rem,3vw,2rem);color:var(--brown-dark);">Hungry? Come Visit Us!</h2>
-        <p style="color:var(--text-mid);margin-top:.5rem;">We're open daily — fresh food and great coffee waiting for you.</p>
+        <p style="color:var(--text-mid);margin-top:.5rem;">We're open daily — fresh food and great coffee waiting for
+          you.</p>
       </div>
       <div class="fade-up" style="display:flex;gap:1rem;flex-wrap:wrap;">
         <a href="contact.html" class="btn-primary">Find Us →</a>
@@ -354,8 +398,10 @@
           <div class="nav-logo">☕ Cozy <span>Cafe</span></div>
           <p>A warm corner in Cadillac, MI where good coffee and good company go hand in hand.</p>
           <div class="footer-social">
-            <a href="https://instagram.com/cozycafecadillac" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener">📷</a>
-            <a href="https://facebook.com/cozycafecadillac" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener">f</a>
+            <a href="https://instagram.com/cozycafecadillac" class="social-icon" aria-label="Instagram" target="_blank"
+              rel="noopener">📷</a>
+            <a href="https://facebook.com/cozycafecadillac" class="social-icon" aria-label="Facebook" target="_blank"
+              rel="noopener">f</a>
           </div>
         </div>
         <div class="footer-col">
@@ -375,17 +421,21 @@
         <div class="footer-col">
           <h4>Contact</h4>
           <p>8834 E 34 Rd #131<br>Cadillac, MI 49601</p>
-          <p style="margin-top:.8rem;"><a href="tel:+15688289017" style="color:rgba(249,243,236,.65);">+1 (56) 882-89017</a></p>
+          <p style="margin-top:.8rem;"><a href="tel:+15688289017" style="color:rgba(249,243,236,.65);">+1 (56)
+              882-89017</a></p>
           <p><a href="mailto:hello@cozycafe.com" style="color:rgba(249,243,236,.65);">hello@cozycafe.com</a></p>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2025 Cozy Cafe. All rights reserved.</span>
-        <span>Crafted by <a href="https://beacon.co.id" target="_blank" rel="noopener" style="color:rgba(249,243,236,.65);text-decoration:underline;transition:color .3s">Yudha Pratama — The Beacon</a></span>
+        <span>© 2026 Cozy Cafe by The Beacon. All rights reserved.</span>
+        <span>Crafted by <a href="https://beacon.co.id" target="_blank" rel="noopener"
+            style="color:rgba(249,243,236,.65);text-decoration:underline;transition:color .3s">Yudha Pratama — The
+            Beacon</a></span>
       </div>
     </div>
   </footer>
 
   <script src="js/main.js"></script>
 </body>
+
 </html>

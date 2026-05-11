@@ -141,4 +141,4 @@ The Beacon — Custom Software Solutions
 
 ---
 
-*© 2025 The Beacon. All rights reserved.*
+*© 2026 The Beacon. All rights reserved.*

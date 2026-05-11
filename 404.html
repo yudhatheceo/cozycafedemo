@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found — Cozy Cafe</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" type="image/png" href="img/exterior.webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body { min-height: 100vh; display: flex; flex-direction: column; }
+    .error-page {
+      flex: 1;
+      display: flex; align-items: center; justify-content: center;
+      position: relative; overflow: hidden;
+      min-height: 100vh;
+      text-align: center;
+    }
+    .error-bg {
+      position: absolute; inset: 0; width: 100%; height: 100%;
+      object-fit: cover; object-position: center;
+      filter: blur(3px); transform: scale(1.05);
+    }
+    .error-overlay {
+      position: absolute; inset: 0;
+      background: rgba(44,26,14,.82);
+    }
+    .error-content {
+      position: relative; z-index: 2;
+      padding: 2rem; max-width: 560px;
+    }
+    .error-code {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(6rem, 18vw, 12rem);
+      font-weight: 700;
+      color: transparent;
+      -webkit-text-stroke: 2px rgba(249,243,236,.3);
+      line-height: 1;
+      margin-bottom: .5rem;
+    }
+    .error-emoji { font-size: 3rem; margin-bottom: 1rem; display: block; }
+    .error-content h1 {
+      color: var(--cream-light);
+      font-size: clamp(1.5rem, 4vw, 2.2rem);
+      margin-bottom: 1rem;
+    }
+    .error-content p {
+      color: rgba(249,243,236,.75);
+      font-size: 1rem; line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+    .error-links { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+
+  <div class="error-page">
+    <img src="img/interior_wide.webp" alt="" class="error-bg" aria-hidden="true" />
+    <div class="error-overlay"></div>
+    <div class="error-content">
+      <div class="error-code">404</div>
+      <span class="error-emoji">☕</span>
+      <h1>Oops — Page Not Found</h1>
+      <p>Looks like this page wandered off to grab a coffee and never came back. Let's get you back to somewhere cozy.</p>
+      <div class="error-links">
+        <a href="index.html" class="btn-primary">Back to Home</a>
+        <a href="menu.html" class="btn-outline">Browse Menu</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

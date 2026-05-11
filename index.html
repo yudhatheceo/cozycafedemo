@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cozy Cafe — Coffee & Good Vibes in Cadillac, MI</title>
+  <meta name="description" content="Cozy Cafe in Cadillac, MI. A warm spot for coffee, pastries, and light meals. WiFi-friendly, relaxing atmosphere for students, professionals, and families." />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Cozy Cafe — Coffee & Good Vibes in Cadillac, MI" />
+  <meta property="og:description" content="Your neighborhood café in Cadillac, MI. Fresh coffee, warm pastries, and cozy vibes." />
+  <meta property="og:image" content="img/exterior_wide.webp" />
+  <meta property="og:url" content="https://cozycafe.com" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/exterior.webp" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "Cozy Cafe",
+    "url": "https://cozycafe.com",
+    "telephone": "+15688289017",
+    "email": "hello@cozycafe.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "8834 E 34 Rd #131",
+      "addressLocality": "Cadillac",
+      "addressRegion": "MI",
+      "postalCode": "49601",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "07:00", "closes": "21:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday"], "opens": "08:00", "closes": "22:00" }
+    ],
+    "servesCuisine": ["Coffee", "Pastries", "Sandwiches", "Burgers"],
+    "priceRange": "$",
+    "sameAs": [
+      "https://instagram.com/cozycafecadillac",
+      "https://facebook.com/cozycafecadillac"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ── NAVBAR ─────────────────────────────── -->
+  <nav class="navbar dark" id="navbar">
+    <a href="index.html" class="nav-logo">☕ Cozy <span>Cafe</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Toggle menu" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ── MOBILE MENU ───────────────────────── -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="menu.html">Menu</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+
+  <!-- ── HERO ──────────────────────────────── -->
+  <section class="hero" id="home">
+    <img src="img/exterior_wide.webp" alt="Cozy Cafe exterior, warm and inviting" class="hero-img" />
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">📍 Cadillac, Michigan</div>
+      <h1>Your Perfect Cup<br><em>Awaits You</em></h1>
+      <p>A warm, welcoming space where great coffee meets a cozy atmosphere. Your neighborhood escape in Cadillac, MI.</p>
+      <div class="hero-btns">
+        <a href="menu.html" class="btn-primary">Explore Our Menu</a>
+        <a href="about.html" class="btn-outline">Our Story</a>
+      </div>
+    </div>
+    <div class="hero-scroll">Scroll</div>
+  </section>
+
+  <!-- ── FEATURES STRIP ─────────────────────── -->
+  <div class="features-strip">
+    <div class="feature-item fade-up">
+      <div class="feature-icon">☕</div>
+      <h4>Fresh Coffee</h4>
+      <p>Brewed daily with care</p>
+    </div>
+    <div class="feature-item fade-up">
+      <div class="feature-icon">📶</div>
+      <h4>Free WiFi</h4>
+      <p>Work from your happy place</p>
+    </div>
+    <div class="feature-item fade-up">
+      <div class="feature-icon">🛋️</div>
+      <h4>Cozy Seating</h4>
+      <p>Comfortable for hours</p>
+    </div>
+    <div class="feature-item fade-up">
+      <div class="feature-icon">🥐</div>
+      <h4>Fresh Pastries</h4>
+      <p>Baked goods daily</p>
+    </div>
+    <div class="feature-item fade-up">
+      <div class="feature-icon">🌿</div>
+      <h4>Relaxing Vibe</h4>
+      <p>Your chill-out destination</p>
+    </div>
+  </div>
+
+  <!-- ── WELCOME / INTRO ──────────────────── -->
+  <section class="section">
+    <div class="container" style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;">
+      <div class="fade-up">
+        <p class="section-label">Welcome to Cozy Cafe</p>
+        <h2 class="section-title">A Place to Sip,<br>Work & Unwind</h2>
+        <div class="divider"></div>
+        <p class="section-sub">Tucked in the heart of Cadillac, MI, Cozy Cafe is your go-to spot for quality coffee, freshly baked pastries, and hearty sandwiches — all served in a warm, relaxed atmosphere that feels like home.</p>
+        <p class="section-sub" style="margin-top:1rem;">Whether you're catching up on work, meeting a friend, or just need a quiet corner — we've got the perfect seat for you.</p>
+        <a href="about.html" class="btn-primary" style="margin-top:2rem;display:inline-block;">Meet Our Story →</a>
+      </div>
+      <div class="fade-in" style="border-radius:20px;overflow:hidden;box-shadow:0 8px 40px rgba(62,31,8,.2);">
+        <img src="img/interior.webp" alt="Cozy Cafe warm interior with wooden furniture and warm lighting" style="width:100%;height:400px;object-fit:cover;" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FEATURED MENU ──────────────────────── -->
+  <section class="section" style="background:var(--cream);">
+    <div class="container">
+      <div class="text-center fade-up">
+        <p class="section-label">What We Serve</p>
+        <h2 class="section-title">Featured Favorites</h2>
+        <div class="divider center"></div>
+        <p class="section-sub">Our most-loved items, crafted with quality ingredients and a whole lot of love.</p>
+      </div>
+      <div class="menu-grid" style="margin-top:2.5rem;">
+        <div class="menu-card fade-up">
+          <div class="menu-card-img gradient-2">🥐</div>
+          <div class="menu-card-body">
+            <h4>Butter Croissant</h4>
+            <p>Golden, flaky, and buttery — the perfect morning treat.</p>
+            <div class="menu-card-footer">
+              <span class="menu-price">$2.00</span>
+              <span class="menu-badge">Breakfast</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card fade-up">
+          <div class="menu-card-img gradient-3">🥤</div>
+          <div class="menu-card-body">
+            <h4>Signature Latte</h4>
+            <p>Smooth espresso with velvety steamed milk — house special.</p>
+            <div class="menu-card-footer">
+              <span class="menu-price">$5.00</span>
+              <span class="menu-badge">Drinks</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card fade-up">
+          <div class="menu-card-img gradient-1">🥪</div>
+          <div class="menu-card-body">
+            <h4>Club Sandwich</h4>
+            <p>Stacked layers of fresh ingredients on toasted bread.</p>
+            <div class="menu-card-footer">
+              <span class="menu-price">$5.00</span>
+              <span class="menu-badge">Lunch</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card fade-up">
+          <div class="menu-card-img gradient-4">🫐</div>
+          <div class="menu-card-body">
+            <h4>Blueberry Muffin</h4>
+            <p>Bursting with fresh blueberries, soft and freshly baked.</p>
+            <div class="menu-card-footer">
+              <span class="menu-price">$12.00</span>
+              <span class="menu-badge">Breakfast</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center" style="margin-top:2.5rem;">
+        <a href="menu.html" class="btn-primary">View Full Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ATMOSPHERE / CTA ───────────────────── -->
+  <section class="atm-section fade-in">
+    <img src="img/interior_wide.webp" alt="Cozy Cafe atmosphere — warm lighting and comfortable seating" class="atm-bg" loading="lazy" />
+    <div class="atm-overlay"></div>
+    <div class="atm-content">
+      <p class="section-label" style="color:var(--cream-dark);">The Vibe</p>
+      <h2 class="section-title" style="color:var(--cream-light);">Come for the Coffee,<br>Stay for the Feeling</h2>
+      <div class="divider"></div>
+      <p class="section-sub" style="color:rgba(249,243,236,.8);">Warm lighting, comfortable chairs, and the gentle hum of a café that feels like home. Whether it's your first visit or your hundredth — you're always welcome here.</p>
+      <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;">
+        <a href="contact.html" class="btn-primary">Find Us</a>
+        <a href="menu.html" class="btn-outline">See Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── GALLERY STRIP ──────────────────────── -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center fade-up">
+        <p class="section-label">Gallery</p>
+        <h2 class="section-title">A Peek Inside</h2>
+        <div class="divider center"></div>
+      </div>
+      <div class="gallery-grid" style="margin-top:2rem;">
+        <div class="gallery-item wide fade-in" style="height:260px;">
+          <img src="img/exterior_wide.webp" alt="Cozy Cafe exterior wide view" loading="lazy" />
+        </div>
+        <div class="gallery-item tall fade-in" style="min-height:260px;">
+          <img src="img/exterior_night.webp" alt="Cozy Cafe at night, warm lights glowing" loading="lazy" />
+        </div>
+        <div class="gallery-item fade-in" style="height:260px;">
+          <img src="img/interior.webp" alt="Cozy Cafe cozy interior" loading="lazy" />
+        </div>
+        <div class="gallery-item fade-in" style="height:260px;">
+          <img src="img/exterior.webp" alt="Cozy Cafe exterior entrance" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── HOURS & CONTACT TEASER ────────────── -->
+  <section class="section-sm" style="background:var(--brown-dark);color:var(--cream-light);">
+    <div class="container" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;text-align:center;">
+      <div class="fade-up">
+        <div style="font-size:2rem;margin-bottom:.5rem;">🕖</div>
+        <h3 style="font-size:1.1rem;margin-bottom:.5rem;">Mon – Fri</h3>
+        <p style="color:rgba(249,243,236,.7);">7:00 AM – 9:00 PM</p>
+      </div>
+      <div class="fade-up">
+        <div style="font-size:2rem;margin-bottom:.5rem;">🌙</div>
+        <h3 style="font-size:1.1rem;margin-bottom:.5rem;">Sat – Sun</h3>
+        <p style="color:rgba(249,243,236,.7);">8:00 AM – 10:00 PM</p>
+      </div>
+      <div class="fade-up">
+        <div style="font-size:2rem;margin-bottom:.5rem;">📍</div>
+        <h3 style="font-size:1.1rem;margin-bottom:.5rem;">Find Us</h3>
+        <p style="color:rgba(249,243,236,.7);">8834 E 34 Rd #131<br>Cadillac, MI 49601</p>
+      </div>
+      <div class="fade-up">
+        <div style="font-size:2rem;margin-bottom:.5rem;">📞</div>
+        <h3 style="font-size:1.1rem;margin-bottom:.5rem;">Call Us</h3>
+        <p style="color:rgba(249,243,236,.7);"><a href="tel:+15688289017" style="color:rgba(249,243,236,.7);">+1 (56) 882-89017</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">☕ Cozy <span>Cafe</span></div>
+          <p>A warm corner in Cadillac, MI where good coffee and good company go hand in hand. Open every day, rain or shine.</p>
+          <div class="footer-social">
+            <a href="https://instagram.com/cozycafecadillac" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener">📷</a>
+            <a href="https://facebook.com/cozycafecadillac" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener">f</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Hours</h4>
+          <p>Mon – Fri<br>7:00 AM – 9:00 PM</p>
+          <p style="margin-top:.8rem;">Sat – Sun<br>8:00 AM – 10:00 PM</p>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>8834 E 34 Rd #131<br>Cadillac, MI 49601</p>
+          <p style="margin-top:.8rem;"><a href="tel:+15688289017" style="color:rgba(249,243,236,.65);">+1 (56) 882-89017</a></p>
+          <p><a href="mailto:hello@cozycafe.com" style="color:rgba(249,243,236,.65);">hello@cozycafe.com</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Cozy Cafe. All rights reserved.</span>
+        <span>Crafted by <a href="https://beacon.co.id" target="_blank" rel="noopener" style="color:rgba(249,243,236,.65);text-decoration:underline;transition:color .3s">Yudha Pratama — The Beacon</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

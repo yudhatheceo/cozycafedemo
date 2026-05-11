@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — Cozy Cafe Cadillac MI</title>
+  <meta name="description" content="Visit Cozy Cafe at 8834 E 34 Rd #131, Cadillac MI 49601. Call us at +1 (56) 882-89017 or send us a message. We'd love to hear from you!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact Cozy Cafe — Cadillac MI" />
+  <meta property="og:description" content="Find us, call us, or send a message. Cozy Cafe is open every day in Cadillac, MI." />
+  <meta property="og:image" content="img/exterior.webp" />
+  <link rel="icon" type="image/png" href="img/exterior.webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .map-embed {
+      width: 100%; height: 320px; border: 0;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+      margin-top: 1.5rem;
+      filter: grayscale(20%) contrast(95%);
+    }
+    .hours-table { width: 100%; border-collapse: collapse; }
+    .hours-table td { padding: .7rem 0; border-bottom: 1px solid var(--cream-dark); font-size: .9rem; color: var(--text-mid); }
+    .hours-table td:first-child { font-weight: 600; color: var(--brown-dark); }
+    .hours-table td:last-child { text-align: right; }
+    .hours-table tr:last-child td { border-bottom: none; }
+    .hours-open { color: var(--green-dark) !important; font-weight: 600 !important; }
+  </style>
+</head>
+<body>
+
+  <!-- ── NAVBAR ─────────────────────────────── -->
+  <nav class="navbar scrolled" id="navbar">
+    <a href="index.html" class="nav-logo">☕ Cozy <span>Cafe</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="contact.html" class="nav-cta active">Contact Us</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Toggle menu" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="menu.html">Menu</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+
+  <!-- ── PAGE HERO ─────────────────────────── -->
+  <div class="page-hero">
+    <img src="img/exterior.webp" alt="Cozy Cafe exterior — come visit us" loading="eager" />
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <p class="section-label">We'd Love to See You</p>
+      <h1>Get in Touch</h1>
+    </div>
+  </div>
+
+  <!-- ── CONTACT MAIN ───────────────────────── -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- LEFT: FORM -->
+        <div class="fade-up">
+          <p class="section-label">Send a Message</p>
+          <h2 class="section-title">Drop Us a Line</h2>
+          <div class="divider"></div>
+          <p class="section-sub" style="margin-bottom:2rem;">Have a question, feedback, or just want to say hi? Fill in the form and we'll get back to you as soon as we can.</p>
+
+          <form id="contact-form" novalidate>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+              <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first_name" placeholder="Jane" required />
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last_name" placeholder="Smith" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number <span style="font-weight:400;color:var(--text-mid);">(optional)</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Reservation, feedback, catering..." />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us how we can help..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary" style="width:100%;border:none;cursor:pointer;font-family:'Inter',sans-serif;font-size:1rem;">
+              Send Message →
+            </button>
+          </form>
+        </div>
+
+        <!-- RIGHT: INFO -->
+        <div class="fade-up" style="animation-delay:.15s;">
+          <p class="section-label">Find Us</p>
+          <h2 class="section-title">Visit Cozy Cafe</h2>
+          <div class="divider"></div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">📍</div>
+            <div>
+              <h4>Address</h4>
+              <p>8834 E 34 Rd #131<br>Cadillac, MI 49601</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">📞</div>
+            <div>
+              <h4>Phone</h4>
+              <a href="tel:+15688289017">+1 (56) 882-89017</a>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">✉️</div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:hello@cozycafe.com">hello@cozycafe.com</a>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">📷</div>
+            <div>
+              <h4>Follow Us</h4>
+              <a href="https://instagram.com/cozycafecadillac" target="_blank" rel="noopener">@cozycafecadillac</a>
+            </div>
+          </div>
+
+          <!-- Hours -->
+          <div style="background:#fff;border-radius:var(--radius-lg);padding:1.5rem;box-shadow:var(--shadow-sm);margin-top:1.5rem;">
+            <h4 style="font-family:'Inter',sans-serif;font-size:.8rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--brown);margin-bottom:1rem;">Opening Hours</h4>
+            <table class="hours-table">
+              <tr>
+                <td>Monday</td>
+                <td class="hours-open">7:00 AM – 9:00 PM</td>
+              </tr>
+              <tr>
+                <td>Tuesday</td>
+                <td class="hours-open">7:00 AM – 9:00 PM</td>
+              </tr>
+              <tr>
+                <td>Wednesday</td>
+                <td class="hours-open">7:00 AM – 9:00 PM</td>
+              </tr>
+              <tr>
+                <td>Thursday</td>
+                <td class="hours-open">7:00 AM – 9:00 PM</td>
+              </tr>
+              <tr>
+                <td>Friday</td>
+                <td class="hours-open">7:00 AM – 9:00 PM</td>
+              </tr>
+              <tr>
+                <td>Saturday</td>
+                <td class="hours-open">8:00 AM – 10:00 PM</td>
+              </tr>
+              <tr>
+                <td>Sunday</td>
+                <td class="hours-open">8:00 AM – 10:00 PM</td>
+              </tr>
+            </table>
+          </div>
+
+          <!-- Map -->
+          <iframe
+            class="map-embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.0!2d-85.4!3d44.25!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zQ2FkbGxpYWMsIE1J!5e0!3m2!1sen!2sus!4v1"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Cozy Cafe location map — Cadillac MI"
+          ></iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ATMOSPHERE STRIP ────────────────────── -->
+  <section class="atm-section fade-in" style="min-height:300px;">
+    <img src="img/exterior_night.webp" alt="Cozy Cafe at night" class="atm-bg" loading="lazy" />
+    <div class="atm-overlay"></div>
+    <div class="atm-content">
+      <p class="section-label" style="color:var(--cream-dark);">Always Open</p>
+      <h2 class="section-title" style="color:var(--cream-light);font-size:clamp(1.5rem,3vw,2.2rem);">See You Soon at Cozy Cafe ☕</h2>
+      <p class="section-sub" style="color:rgba(249,243,236,.8);">Your perfect cup is ready. We're open every day — mornings, afternoons, and evenings.</p>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">☕ Cozy <span>Cafe</span></div>
+          <p>A warm corner in Cadillac, MI where good coffee and good company go hand in hand.</p>
+          <div class="footer-social">
+            <a href="https://instagram.com/cozycafecadillac" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener">📷</a>
+            <a href="https://facebook.com/cozycafecadillac" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener">f</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Hours</h4>
+          <p>Mon – Fri<br>7:00 AM – 9:00 PM</p>
+          <p style="margin-top:.8rem;">Sat – Sun<br>8:00 AM – 10:00 PM</p>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>8834 E 34 Rd #131<br>Cadillac, MI 49601</p>
+          <p style="margin-top:.8rem;"><a href="tel:+15688289017" style="color:rgba(249,243,236,.65);">+1 (56) 882-89017</a></p>
+          <p><a href="mailto:hello@cozycafe.com" style="color:rgba(249,243,236,.65);">hello@cozycafe.com</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Cozy Cafe. All rights reserved.</span>
+        <span>Crafted by <a href="https://beacon.co.id" target="_blank" rel="noopener" style="color:rgba(249,243,236,.65);text-decoration:underline;transition:color .3s">Yudha Pratama — The Beacon</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

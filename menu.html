@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu — Cozy Cafe Cadillac MI</title>
+  <meta name="description" content="Explore the Cozy Cafe menu. Fresh pastries, sandwiches, burgers, and specialty coffee drinks in Cadillac, MI." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Cozy Cafe Menu — Cadillac MI" />
+  <meta property="og:description" content="Pastries, sandwiches, burgers, and specialty drinks. Fresh daily at Cozy Cafe." />
+  <meta property="og:image" content="img/interior.webp" />
+  <link rel="icon" type="image/png" href="img/exterior.webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .drinks-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1.2rem;
+    }
+    .drink-card {
+      background: #fff;
+      border-radius: var(--radius-lg);
+      padding: 1.4rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      box-shadow: var(--shadow-sm);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+    .drink-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+    .drink-icon {
+      width: 52px; height: 52px; border-radius: 50%;
+      background: var(--cream);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem; flex-shrink: 0;
+    }
+    .drink-info { flex: 1; }
+    .drink-info h4 { font-size: .95rem; color: var(--brown-dark); margin-bottom: .2rem; }
+    .drink-info p { font-size: .8rem; color: var(--text-mid); }
+    .drink-price { font-weight: 700; color: var(--brown); font-size: 1rem; }
+
+    .menu-section-header {
+      display: flex; align-items: center; gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .menu-section-header h3 {
+      font-size: 1.3rem; color: var(--brown-dark);
+      white-space: nowrap;
+    }
+    .menu-section-line {
+      flex: 1; height: 1px; background: var(--cream-dark);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── NAVBAR ─────────────────────────────── -->
+  <nav class="navbar scrolled" id="navbar">
+    <a href="index.html" class="nav-logo">☕ Cozy <span>Cafe</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="menu.html" class="active">Menu</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Toggle menu" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="menu.html">Menu</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+
+  <!-- ── PAGE HERO ─────────────────────────── -->
+  <div class="page-hero">
+    <img src="img/interior.webp" alt="Cozy Cafe interior — menu overview" loading="eager" />
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <p class="section-label">What We Serve</p>
+      <h1>Our Menu</h1>
+    </div>
+  </div>
+
+  <!-- ── MENU SECTION ──────────────────────── -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Intro -->
+      <div class="text-center fade-up" style="margin-bottom:2.5rem;">
+        <p class="section-label">Fresh & Delicious</p>
+        <h2 class="section-title">Made with Love, Daily</h2>
+        <div class="divider center"></div>
+        <p class="section-sub">Everything on our menu is prepared fresh each day. From flaky morning pastries to hearty afternoon bites — there's something for every craving.</p>
+      </div>
+
+      <!-- TAB BAR -->
+      <div class="tab-bar fade-up">
+        <button class="tab-btn active" data-tab="tab-breakfast" id="btn-breakfast">🥐 Breakfast & Pastries</button>
+        <button class="tab-btn" data-tab="tab-lunch" id="btn-lunch">🥪 Lunch & Snacks</button>
+        <button class="tab-btn" data-tab="tab-drinks" id="btn-drinks">☕ Drinks</button>
+      </div>
+
+      <!-- ── TAB: BREAKFAST ─────────────────── -->
+      <div class="tab-panel active fade-up" id="tab-breakfast">
+        <div class="menu-section-header">
+          <h3>Breakfast &amp; Pastries</h3>
+          <div class="menu-section-line"></div>
+          <span style="font-size:.8rem;color:var(--text-mid);white-space:nowrap;">Served all day</span>
+        </div>
+        <div style="background:#fff;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-sm);">
+          <table class="menu-table">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Description</th>
+                <th style="text-align:right;">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Butter Croissant</strong></td>
+                <td style="color:var(--text-mid);font-size:.9rem;">Golden, flaky, and perfectly buttery</td>
+                <td class="price" style="text-align:right;">$2.00</td>
+              </tr>
+              <tr>
+                <td><strong>Chocolate Croissant</strong></td>
+                <td style="color:var(--text-mid);font-size:.9rem;">Flaky pastry filled with rich dark chocolate</td>
+                <td class="price" style="text-align:right;">$5.00</td>
+              </tr>
+              <tr>
+                <td><strong>Cinnamon Roll</strong></td>
+                <td style="color:var(--text-mid);font-size:.9rem;">Soft, warm, drizzled with cream cheese icing</td>
+                <td class="price" style="text-align:right;">$3.00</td>
+              </tr>
+              <tr>
+                <td><strong>Banana Bread Slice</strong></td>
+                <td style="color:var(--text-mid);font-size:.9rem;">Moist, homestyle baked banana bread</td>
+                <td class="price" style="text-align:right;">$10.00</td>
+              </tr>
+              <tr>
+                <td><strong>Blueberry Muffin</strong></td>
+                <td style="color:var(--text-mid);font-size:.9rem;">Bursting with fresh blueberries, baked golden</td>
+                <td class="price" style="text-align:right;">$12.00</td>
+              </tr>
+              <tr>
+                <td><strong>Cheese Danish</strong></td>
+                <td style="color:var(--text-mid);font-size:.9rem;">Creamy cheese filling in a delicate pastry shell</td>
+                <td class="price" style="text-align:right;">$14.00</td>
+              </tr>
+              <tr>
+                <td><strong>Toast &amp; Jam</strong></td>
+                <td style="color:var(--text-mid);font-size:.9rem;">Thick-cut toast with seasonal house jam</td>
+                <td class="price" style="text-align:right;">$9.00</td>
+              </tr>
+              <tr>
+                <td><strong>Pancake Stack</strong></td>
+                <td style="color:var(--text-mid);font-size:.9rem;">Fluffy stack of three, served with maple syrup</td>
+                <td class="price" style="text-align:right;">$8.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ── TAB: LUNCH ─────────────────────── -->
+      <div class="tab-panel fade-up" id="tab-lunch">
+        <div class="menu-section-header">
+          <h3>Lunch &amp; Snacks</h3>
+          <div class="menu-section-line"></div>
+          <span style="font-size:.8rem;color:var(--text-mid);white-space:nowrap;">Available from 11 AM</span>
+        </div>
+        <div style="background:#fff;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-sm);">
+          <table class="menu-table">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Description</th>
+                <th style="text-align:right;">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Club Sandwich</strong></td>
+                <td style="color:var(--text-mid);font-size:.9rem;">Turkey, bacon, lettuce, tomato on toasted bread</td>
+                <td class="price" style="text-align:right;">$5.00</td>
+              </tr>
+              <tr>
+                <td><strong>Chicken Sandwich</strong></td>
+                <td style="color:var(--text-mid);font-size:.9rem;">Grilled chicken with fresh veggies and aioli</td>
+                <td class="price" style="text-align:right;">$2.00</td>
+              </tr>
+              <tr>
+                <td><strong>Veggie Sandwich</strong></td>
+                <td style="color:var(--text-mid);font-size:.9rem;">Fresh garden vegetables with hummus spread</td>
+                <td class="price" style="text-align:right;">$1.00</td>
+              </tr>
+              <tr>
+                <td><strong>Beef Burger</strong></td>
+                <td style="color:var(--text-mid);font-size:.9rem;">Juicy beef patty with all the classic toppings</td>
+                <td class="price" style="text-align:right;">$5.00</td>
+              </tr>
+              <tr>
+                <td><strong>Chicken Burger</strong></td>
+                <td style="color:var(--text-mid);font-size:.9rem;">Crispy chicken fillet with coleslaw and pickles</td>
+                <td class="price" style="text-align:right;">$8.00</td>
+              </tr>
+              <tr>
+                <td><strong>French Fries</strong></td>
+                <td style="color:var(--text-mid);font-size:.9rem;">Crispy golden fries, lightly seasoned</td>
+                <td class="price" style="text-align:right;">$5.00</td>
+              </tr>
+              <tr>
+                <td><strong>Meat Pie</strong></td>
+                <td style="color:var(--text-mid);font-size:.9rem;">Hearty hand-held pie with savory meat filling</td>
+                <td class="price" style="text-align:right;">$8.00</td>
+              </tr>
+              <tr>
+                <td><strong>Sausage Roll</strong></td>
+                <td style="color:var(--text-mid);font-size:.9rem;">Flaky pastry wrapped around seasoned sausage</td>
+                <td class="price" style="text-align:right;">$7.00</td>
+              </tr>
+              <tr>
+                <td><strong>Spring Rolls</strong></td>
+                <td style="color:var(--text-mid);font-size:.9rem;">Crispy veggie-filled rolls with dipping sauce</td>
+                <td class="price" style="text-align:right;">$2.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ── TAB: DRINKS ────────────────────── -->
+      <div class="tab-panel fade-up" id="tab-drinks">
+        <div class="menu-section-header">
+          <h3>Drinks</h3>
+          <div class="menu-section-line"></div>
+          <span style="font-size:.8rem;color:var(--text-mid);white-space:nowrap;">All day menu</span>
+        </div>
+        <div class="drinks-grid">
+          <div class="drink-card">
+            <div class="drink-icon">☕</div>
+            <div class="drink-info">
+              <h4>Espresso</h4>
+              <p>Single or double shot, rich and bold</p>
+            </div>
+            <span class="drink-price">$3.50</span>
+          </div>
+          <div class="drink-card">
+            <div class="drink-icon">🫖</div>
+            <div class="drink-info">
+              <h4>Americano</h4>
+              <p>Espresso with hot water, smooth finish</p>
+            </div>
+            <span class="drink-price">$4.00</span>
+          </div>
+          <div class="drink-card">
+            <div class="drink-icon">☕</div>
+            <div class="drink-info">
+              <h4>Cappuccino</h4>
+              <p>Equal parts espresso, steamed milk, foam</p>
+            </div>
+            <span class="drink-price">$4.50</span>
+          </div>
+          <div class="drink-card">
+            <div class="drink-icon">🥛</div>
+            <div class="drink-info">
+              <h4>Latte</h4>
+              <p>Smooth espresso with velvety steamed milk</p>
+            </div>
+            <span class="drink-price">$5.00</span>
+          </div>
+          <div class="drink-card">
+            <div class="drink-icon">🧊</div>
+            <div class="drink-info">
+              <h4>Cold Brew</h4>
+              <p>Slow-steeped, bold, served over ice</p>
+            </div>
+            <span class="drink-price">$5.50</span>
+          </div>
+          <div class="drink-card">
+            <div class="drink-icon">🍵</div>
+            <div class="drink-info">
+              <h4>Chai Tea Latte</h4>
+              <p>Spiced chai blend with steamed milk</p>
+            </div>
+            <span class="drink-price">$4.50</span>
+          </div>
+          <div class="drink-card">
+            <div class="drink-icon">🍵</div>
+            <div class="drink-info">
+              <h4>Matcha Latte</h4>
+              <p>Ceremonial matcha with oat or whole milk</p>
+            </div>
+            <span class="drink-price">$5.00</span>
+          </div>
+          <div class="drink-card">
+            <div class="drink-icon">🍋</div>
+            <div class="drink-info">
+              <h4>Seasonal Lemonade</h4>
+              <p>House-made, refreshing, served chilled</p>
+            </div>
+            <span class="drink-price">$4.00</span>
+          </div>
+          <div class="drink-card">
+            <div class="drink-icon">🌿</div>
+            <div class="drink-info">
+              <h4>Green Tea</h4>
+              <p>Premium loose-leaf, hot or iced</p>
+            </div>
+            <span class="drink-price">$3.50</span>
+          </div>
+          <div class="drink-card">
+            <div class="drink-icon">🍫</div>
+            <div class="drink-info">
+              <h4>Hot Chocolate</h4>
+              <p>Rich, creamy, topped with whipped cream</p>
+            </div>
+            <span class="drink-price">$4.50</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Allergen note -->
+      <p class="fade-up" style="margin-top:2.5rem;font-size:.82rem;color:var(--text-mid);text-align:center;padding:1rem;background:var(--cream);border-radius:var(--radius);">
+        ⚠️ Please inform our staff of any allergies or dietary requirements. Menu items and prices are subject to change.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- ── CTA STRIP ──────────────────────────── -->
+  <section class="section-sm" style="background:var(--cream);">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;">
+      <div class="fade-up">
+        <h2 style="font-size:clamp(1.4rem,3vw,2rem);color:var(--brown-dark);">Hungry? Come Visit Us!</h2>
+        <p style="color:var(--text-mid);margin-top:.5rem;">We're open daily — fresh food and great coffee waiting for you.</p>
+      </div>
+      <div class="fade-up" style="display:flex;gap:1rem;flex-wrap:wrap;">
+        <a href="contact.html" class="btn-primary">Find Us →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">☕ Cozy <span>Cafe</span></div>
+          <p>A warm corner in Cadillac, MI where good coffee and good company go hand in hand.</p>
+          <div class="footer-social">
+            <a href="https://instagram.com/cozycafecadillac" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener">📷</a>
+            <a href="https://facebook.com/cozycafecadillac" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener">f</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Hours</h4>
+          <p>Mon – Fri<br>7:00 AM – 9:00 PM</p>
+          <p style="margin-top:.8rem;">Sat – Sun<br>8:00 AM – 10:00 PM</p>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>8834 E 34 Rd #131<br>Cadillac, MI 49601</p>
+          <p style="margin-top:.8rem;"><a href="tel:+15688289017" style="color:rgba(249,243,236,.65);">+1 (56) 882-89017</a></p>
+          <p><a href="mailto:hello@cozycafe.com" style="color:rgba(249,243,236,.65);">hello@cozycafe.com</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Cozy Cafe. All rights reserved.</span>
+        <span>Crafted by <a href="https://beacon.co.id" target="_blank" rel="noopener" style="color:rgba(249,243,236,.65);text-decoration:underline;transition:color .3s">Yudha Pratama — The Beacon</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
